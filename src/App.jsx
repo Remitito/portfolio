@@ -1,27 +1,19 @@
 import React from 'react';
-import { Link, Element } from 'react-scroll';
-import Home from './Home';
-import About from './About';
-import Projects from './Projects';
+import { Element } from 'react-scroll';
+import About from './components/About';
+import Projects from './components/Projects';
+import Navbar from './components/Navbar'
 import './App.css';
 
 const App = () => {
   return (
     <div>
-      <nav className="nav">
-        <Link to="home" smooth={true} duration={500}>Home</Link>
-        <Link to="about" smooth={true} duration={500}>About</Link>
-        <Link to="projects" smooth={true} duration={500}>Projects</Link>
-      </nav>
-
+      <Navbar/>
       <div className="sections">
-        <Element className='section' name="home">
-          <Home />
-        </Element>
-        <Element className='section' name="about">
+        <Element className='sectionOdd' name="about">
           <About />
         </Element>
-        <Element className='section' name="projects">
+        <Element className='sectionEven' name="projects">
           <Projects />
         </Element>
       </div>

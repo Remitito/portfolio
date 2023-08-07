@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Comic';
+    src: url('../assets/fonts/ComicNeue-Regular.ttf');
+}
+
+.aboutMain {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.aboutTextCont {
+    height: 300px;
+    text-align: center;
+}
+
+.avatarCont {
+    height: 300px;
+    position: relative;
+}
+
+.avatar {
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+@keyframes growAndShrink {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .bubble {
+      display: flex; 
+      justify-content: center;
+      align-items: center; 
+      position: absolute;
+      width: 190px;
+      height: 100px;
+      background: #f9f9f9;
+      border-radius: 40px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      /* animation: growAndShrink 3s infinite; */
+  }
+.bubble:hover {
+    transform: scale(1.1); /* Increase the size to 110% */
+    transition: transform 0.3s ease; /* Animation duration and easing function */
+}
+.bubble.top-left, .bubble.top-right, .bubble.bottom-left,.bubble.bottom-right {
+    font-size: 1rem;
+}
+
+/* Small screens (default) */
+.bubble.top-left {
+    top: 20%;
+    left: 10%;
+}
+
+.bubble.top-right {
+    top: 20%;
+    right: 10%;
+}
+
+.bubble.bottom-left {
+    bottom: 20%;
+    left: 10%;
+}
+
+.bubble.bottom-right {
+    bottom: 20%;
+    right: 10%;
+    border-radius: 5px; /* More squared corners for a code-like appearance */
+    text-align: left; 
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap; /* Allow wrapping but preserve whitespace */
+}
+
+.bubble.bottom-right p {
+    position: relative;
+    overflow: hidden; /* Hide the overflowing text */
+    white-space: nowrap; /* Keep everything on the same line */
+    margin: 0; /* Reset margin */
+    letter-spacing: .15em; /* Adjust letter spacing */
+}
+
+.bubble.bottom-right p:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1ch;
+    height: 100%;
+    border-right: .15em solid orange; /* The typewriter cursor */
+    animation: blink-caret .75s step-end infinite; /* Cursor blinking */
+}
+
+/* Cursor blinking effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+/* Large screens */
+@media screen and (min-width: 1200px) { /* Adjust the breakpoint as needed */
+    .bubble.top-left {
+        top: 20%;
+        left: 25%;
+    }
+
+    .bubble.top-right {
+        top: 20%;
+        right: 25%;
+    }
+
+    .bubble.bottom-left {
+        bottom: 20%;
+        left: 25%;
+    }
+
+    .bubble.bottom-right {
+        bottom: 20%;
+        right: 25%;
+    }
+}
