@@ -2,6 +2,20 @@
     font-family: 'Comic';
     src: url('../assets/fonts/ComicNeue-Regular.ttf');
 }
+@font-face {
+    font-family: 'Matador';
+    src: url('../assets/fonts/Matador-YzDj.ttf');
+}
+
+@font-face {
+    font-family: 'SnickerSnack';
+    src: url('../assets/fonts/SnickerSnack-BgDV.ttf');
+}
+
+@font-face {
+    font-family: 'SonOfTime';
+    src: url('../assets/fonts/Sonoftime-KwYA.ttf');
+}
 
 .aboutMain {
     position: relative;
@@ -40,34 +54,60 @@
   .bubble {
       display: flex; 
       justify-content: center;
+      font-size: 2rem;
       align-items: center; 
       position: absolute;
-      width: 190px;
+      width: 220px;
       height: 100px;
       background: #f9f9f9;
-      border-radius: 40px;
+      border-radius: 20px;
       text-align: center;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      /* animation: growAndShrink 3s infinite; */
-  }
-.bubble:hover {
-    transform: scale(1.1); /* Increase the size to 110% */
-    transition: transform 0.3s ease; /* Animation duration and easing function */
-}
-.bubble.top-left, .bubble.top-right, .bubble.bottom-left,.bubble.bottom-right {
-    font-size: 1rem;
-}
+      }
 
-/* Small screens (default) */
+
+
 .bubble.top-left {
     top: 20%;
     left: 10%;
+    animation: growAndShrink 3s infinite;
 }
 
+
 .bubble.top-right {
+    display: flex;
+    justify-content: right;
+    font-size: 3rem;
+    font-family: SonOfTime;
+    border-radius: 0;
+    height: 140px;
     top: 20%;
-    right: 10%;
+    right: 15%;
+    background-image: url('spain.jpg');
+    background-position: center;
+    background-size: 150%;
+    animation: wave 2s linear infinite;
 }
+@keyframes wave {
+    0% {
+      transform: translate(0, 0) scaleY(1);
+    }
+    25% {
+      transform: translate(0, 10px) scaleY(0.9);
+    }
+    50% {
+      transform: translate(0, 0) scaleY(1);
+    }
+    75% {
+      transform: translate(0, -10px) scaleY(1.1);
+    }
+    100% {
+      transform: translate(0, 0) scaleY(1);
+    }
+  }
+
+
+
 
 .bubble.bottom-left {
     bottom: 20%;
@@ -76,31 +116,33 @@
 
 .bubble.bottom-right {
     bottom: 20%;
-    right: 10%;
-    border-radius: 5px; /* More squared corners for a code-like appearance */
-    text-align: left; 
+    right: 15%;
+    font-size: 1.3rem;
     font-family: 'Courier New', monospace;
-    white-space: pre-wrap; /* Allow wrapping but preserve whitespace */
+    white-space: pre-wrap; 
+    background-color: #282c34; 
+    color: #a9b7c6;             
+    border-radius: 5px;         
+    padding: 5px;              
+    
 }
 
 .bubble.bottom-right p {
     position: relative;
-    overflow: hidden; /* Hide the overflowing text */
-    white-space: nowrap; /* Keep everything on the same line */
-    margin: 0; /* Reset margin */
-    letter-spacing: .15em; /* Adjust letter spacing */
+    white-space: nowrap; 
+    margin: 0; 
+    letter-spacing: .15em; 
 }
 
 .bubble.bottom-right p:after {
     content: '';
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 1ch;
-    height: 100%;
-    border-right: .15em solid orange; /* The typewriter cursor */
-    animation: blink-caret .75s step-end infinite; /* Cursor blinking */
+    width: 1px;
+    height: 100%; 
+    border-right: .15em solid orange; 
+    animation: blink-caret .75s step-end infinite; 
 }
+
 
 /* Cursor blinking effect */
 @keyframes blink-caret {
