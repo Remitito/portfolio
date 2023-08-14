@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Comic';
+    src: url('../assets/fonts/ComicNeue-Regular.ttf');
+}
+@font-face {
+    font-family: 'Matador';
+    src: url('../assets/fonts/Matador-YzDj.ttf');
+}
+
+@font-face {
+    font-family: 'SnickerSnack';
+    src: url('../assets/fonts/SnickerSnack-BgDV.ttf');
+}
+
+@font-face {
+    font-family: 'SonOfTime';
+    src: url('../assets/fonts/Sonoftime-KwYA.ttf');
+}
+
+@font-face {
+    font-family: 'SmileySans';
+    src: url("../assets//fonts/SmileySans-Oblique.ttf");
+}
+@font-face {
+    font-family: 'Chopic';
+    src: url('../assets/fonts/Chopic3DFreeVersionRegular-MVqvv.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf');
+}
+
+.hey {
+    font-family: Roboto;
+    font-size: 3rem;
+}
+
+.homeMain {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.homeTextCont {
+    height: 500px;
+    text-align: center;
+    border-bottom: 1px solid transparent;
+}
+
+
+.avatarCont {
+    height: 280px;
+    position: relative;
+}
+
+.avatar {
+    bottom: 0%;
+    height: 550px;
+    left: 50%; 
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+@keyframes growAndShrink {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .bubble {
+      display: flex; 
+      justify-content: center;
+      align-items: center; 
+      position: absolute;
+      width: 280px;
+      height: 100px;
+      border-radius: 20px;
+      }
+
+
+.bubble.bottom-right, .bubble.top-left, .bubble.top-right {
+    font-size: 1.6rem;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap; 
+    background-color: #282c34; 
+    color: #a9b7c6;             
+    border-radius: 5px;
+    padding: 5px;              
+}
+.bubble.bottom-left {
+    font-size: 1rem;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap; 
+    background-color: #282c34; 
+    color: #a9b7c6;             
+    border-radius: 5px;
+    padding: 5px;  
+    overflow: scroll;
+}
+
+.bubble.bottom-right p, .bubble.top-left p, .bubble.top-right p, .bubble.bottom-left p {
+    position: relative;
+    white-space: nowrap; 
+    margin: 0; 
+    letter-spacing: .15em; 
+}
+
+.bubble.bottom-right p:after, .bubble.top-left p:after, .bubble.top-right p:after, .bubble.bottom-left p:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%; 
+    border-right: .15em solid orange; 
+    animation: blink-caret .75s step-end infinite; 
+}
+
+
+/* Cursor blinking effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+    .bubble.top-left {
+        top: 20%;
+        left: 18%;
+    }
+    .bubble.top-left:hover {
+        background-image: url('spain.jpg');
+        background-size: 110%;
+        color: transparent;
+        animation: none;
+        background-position: center;
+    }
+
+    .bubble.top-right {
+        top: 20%;
+        right: 18%;
+    }
+    .bubble.top-right:hover {
+        background-image: url('china.png');
+        background-size: 100% 125%; 
+        background-position: 0% 0%; 
+        background-repeat: no-repeat;
+        color: transparent;
+    }
+
+    .bubble.bottom-right {
+        bottom: 20%;
+        right: 18%;
+    }
+    .bubble.bottom-right:hover {
+        color: red;
+    }
+
+    .bubble.bottom-left {
+        bottom: 20%;
+        left: 18%;
+      }
+    
+
+/* @media screen and (min-width: 1200px) { Adjust the breakpoint as needed */

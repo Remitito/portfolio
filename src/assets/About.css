@@ -1,174 +1,58 @@
 @font-face {
-    font-family: 'Comic';
-    src: url('../assets/fonts/ComicNeue-Regular.ttf');
-}
-@font-face {
-    font-family: 'Matador';
-    src: url('../assets/fonts/Matador-YzDj.ttf');
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf');
 }
 
-@font-face {
-    font-family: 'SnickerSnack';
-    src: url('../assets/fonts/SnickerSnack-BgDV.ttf');
-}
-
-@font-face {
-    font-family: 'SonOfTime';
-    src: url('../assets/fonts/Sonoftime-KwYA.ttf');
+.aboutHeading {
+    font-family: "Roboto";
+    font-size: 1.5rem;
 }
 
 .aboutMain {
-    position: relative;
-    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
 }
 
-.aboutTextCont {
-    height: 300px;
-    text-align: center;
+.leftAboutSection {
+    margin-left: 3%;
+    width: 30%;
 }
 
-.avatarCont {
-    height: 300px;
-    position: relative;
+.aboutList li {
+    line-height: 1.3rem;
+    margin-top: 20px;
+}
+ul.aboutList {
+
 }
 
-.avatar {
-    bottom: 0;
-    left: 50%; 
-    transform: translateX(-50%);
-    position: absolute;
+.rightAboutSection {
+    margin-right: 2%;
+    width: 60%;
 }
 
-@keyframes growAndShrink {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
+table {
+    width: 100%;
+    border-collapse: collapse;
   }
   
-  .bubble {
-      display: flex; 
-      justify-content: center;
-      font-size: 2rem;
-      align-items: center; 
-      position: absolute;
-      width: 220px;
-      height: 100px;
-      background: #f9f9f9;
-      border-radius: 20px;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-
-
-
-.bubble.top-left {
-    top: 20%;
-    left: 10%;
-    animation: growAndShrink 3s infinite;
-}
-
-
-.bubble.top-right {
-    display: flex;
-    justify-content: right;
-    font-size: 3rem;
-    font-family: SonOfTime;
-    border-radius: 0;
-    height: 140px;
-    top: 20%;
-    right: 15%;
-    background-image: url('spain.jpg');
-    background-position: center;
-    background-size: 150%;
-    animation: wave 2s linear infinite;
-}
-@keyframes wave {
-    0% {
-      transform: translate(0, 0) scaleY(1);
-    }
-    25% {
-      transform: translate(0, 10px) scaleY(0.9);
-    }
-    50% {
-      transform: translate(0, 0) scaleY(1);
-    }
-    75% {
-      transform: translate(0, -10px) scaleY(1.1);
-    }
-    100% {
-      transform: translate(0, 0) scaleY(1);
-    }
+  th {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
   }
-
-
-
-
-.bubble.bottom-left {
-    bottom: 20%;
-    left: 10%;
-}
-
-.bubble.bottom-right {
-    bottom: 20%;
-    right: 15%;
-    font-size: 1.3rem;
-    font-family: 'Courier New', monospace;
-    white-space: pre-wrap; 
-    background-color: #282c34; 
-    color: #a9b7c6;             
-    border-radius: 5px;         
-    padding: 5px;              
-    
-}
-
-.bubble.bottom-right p {
-    position: relative;
-    white-space: nowrap; 
-    margin: 0; 
-    letter-spacing: .15em; 
-}
-
-.bubble.bottom-right p:after {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 100%; 
-    border-right: .15em solid orange; 
-    animation: blink-caret .75s step-end infinite; 
-}
-
-
-/* Cursor blinking effect */
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: orange; }
-}
-
-/* Large screens */
-@media screen and (min-width: 1200px) { /* Adjust the breakpoint as needed */
-    .bubble.top-left {
-        top: 20%;
-        left: 25%;
-    }
-
-    .bubble.top-right {
-        top: 20%;
-        right: 25%;
-    }
-
-    .bubble.bottom-left {
-        bottom: 20%;
-        left: 25%;
-    }
-
-    .bubble.bottom-right {
-        bottom: 20%;
-        right: 25%;
-    }
-}
+  
+  /* Style the data cells */
+  td {
+    border: 1px solid #ccc;
+    padding: 18px;
+    text-align: center;
+  }
+  
+  /* Style the rows - this example adds a hover effect */
+  tr:hover {
+    background-color: #f0f0f0;
+  }

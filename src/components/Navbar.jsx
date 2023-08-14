@@ -4,9 +4,10 @@ import '../assets/Navbar.css';
 
 const Navbar = () => {
     return (
+    <div className='navCont'>
         <div className="nav">
             <div className='leftSection'>
-            <Link to="home" smooth={true} duration={500}>Jack Rosser</Link>
+                <Link to="home" smooth={true} duration={500}>Jack Rosser</Link>
             </div>
             <div className='rightSection'>
                 <Link to="about" smooth={true} duration={500}>About</Link>
@@ -14,6 +15,7 @@ const Navbar = () => {
                 <Link to="contact" smooth={true} duration={500}>Contact</Link>
             </div>
       </div>
+    </div>
     )
 }
 
