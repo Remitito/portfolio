@@ -6,8 +6,7 @@ const Navbar = () => {
     return (
     <div className='navCont'>
         <div className="nav">
-            <div className='leftSection'>
-                <Link to="home" smooth={true} duration={500}>Jack Rosser</Link>
+            <div className='leftSection'>Jack Rosser
             </div>
             <div className='rightSection'>
                 <Link to="about" smooth={true} duration={500}>About</Link>

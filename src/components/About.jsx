@@ -1,19 +1,20 @@
 import React from 'react';
 import '../assets/About.css'
-// import { SlBookOpen } from "react-icons/si";
+import { Link } from 'react-scroll';
 
 const About = () => {
     return (
-        <div className='aboutMain'>
+        <>
+            <div className='scrollCont'>
+                <Link to="about" className='scroll' smooth={true} duration={500}/>
+            </div>
+            <div className='aboutMain'>
             <div className='leftAboutSection'>
                 <h2 className='aboutHeading'>About Me</h2>
                 <ul className='aboutList'>
-                    <li>
                     <li>I began learning to code while in China; I completed many online courses and practice projects before starting a master's degree in Computer Science in 2021.</li>
                     <li> I have used the MERN stack to build web apps that help students/teachers in China</li>
-                    </li>
-                    <li>I am looking for a full time junior developer position based remotely or in the UK 
-                    </li>
+                    <li>I am looking for a full time junior developer position in an English, Chinese, or Spanish-speaking company (UK-based or remote) </li>
                 </ul>
             </div>
             <div className='rightAboutSection'>
@@ -23,7 +24,7 @@ const About = () => {
                     <tr>
                     <th>Frontend</th>
                     <th>Backend</th>
-                    <th>Basic</th>
+                    <th>Basic Level</th>
                     <th>Collaboration</th>
                     <th>Languages</th>
                     </tr>
@@ -55,6 +56,7 @@ const About = () => {
             </table>
             </div>
         </div>
+        </>
     )
 }
 

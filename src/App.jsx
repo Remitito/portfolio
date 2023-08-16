@@ -11,9 +11,9 @@ const App = () => {
     <div>
       <Navbar/>
       <div className="sections">
-      <Element className='sectionOdd' name="home">
+      <Element style={{height: "800px"}} name="home">
           <Home />
-        </Element>
+      </Element>
         <Element className='sectionEven' name="about">
           <About />
         </Element>

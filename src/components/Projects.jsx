@@ -4,8 +4,10 @@ import '../assets/Projects.css'
 const Projects = () => {
     return (
         <div className='projectsMain'>
-            <h2>Projects</h2>
-            <p>I made this...</p>
+            <h2 className='projectsHeader'>Projects</h2>
+            <div className='projectsTable'>
+
+            </div>
         </div>
     )
 }

@@ -35,40 +35,30 @@
     font-family: Roboto;
     font-size: 3rem;
 }
-.homeAbout {
-    font-family: Comic;
-    font-size: 2rem;
-}
-
-.homeLeft {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    width: 60%;
-}
-
-.homeRight {
-    align-items: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 35%;
-}
 
 .homeMain {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: #f0f0f0;
-    height: 750px;
-    width: 100%;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.homeTextCont {
+    height: 500px;
+    text-align: center;
+    border-bottom: 1px solid transparent;
 }
 
 
+.avatarCont {
+    height: 280px;
+    position: relative;
+}
+
 .avatar {
-    height: 70%;
+    bottom: 0%;
+    height: 550px;
+    left: 50%; 
+    transform: translateX(-50%);
+    position: absolute;
 }
 
 @keyframes growAndShrink {
@@ -87,6 +77,7 @@
       display: flex; 
       justify-content: center;
       align-items: center; 
+      position: absolute;
       width: 280px;
       height: 100px;
       border-radius: 20px;
@@ -136,12 +127,21 @@
     50% { border-color: orange; }
 }
 
+    .bubble.top-left {
+        top: 20%;
+        left: 18%;
+    }
     .bubble.top-left:hover {
         background-image: url('spain.jpg');
         background-size: 110%;
         color: transparent;
         animation: none;
         background-position: center;
+    }
+
+    .bubble.top-right {
+        top: 20%;
+        right: 18%;
     }
     .bubble.top-right:hover {
         background-image: url('china.png');
@@ -150,11 +150,19 @@
         background-repeat: no-repeat;
         color: transparent;
     }
-    
 
-/* @media screen and (min-width: 1200px) {
-    .homeLeft, .homeRight {
-        width: 50%;
+    .bubble.bottom-right {
+        bottom: 20%;
+        right: 18%;
+    }
+    .bubble.bottom-right:hover {
+        color: red;
     }
 
-} */
+    .bubble.bottom-left {
+        bottom: 20%;
+        left: 18%;
+      }
+    
+
+/* @media screen and (min-width: 1200px) { Adjust the breakpoint as needed */
