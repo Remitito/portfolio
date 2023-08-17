@@ -8,8 +8,8 @@ const Home = () => {
         <div className='homeMain'>
             <div className='homeLeft'>
                 <div className='homeTextCont'>
-                    <h2 className='hey'>Hey there!</h2>
-                    <label className='homeAbout'>I'm a MERN stack developer who loves languages</label>
+                    <h2 className='hey'>Hey, I'm Jack!</h2>
+                    <label className='homeAbout'>A MERN stack developer who loves languages</label>
                 </div>
                     <img className='avatar' src={'./myAvatar.png'} alt="My Avatar" />
             </div>
