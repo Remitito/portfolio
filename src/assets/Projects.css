@@ -9,8 +9,13 @@
 }
 
 @font-face {
-    font-family: BebasNeue;
+    font-family: 'BebasNeue';
     src: url('../assets/fonts/BebasNeue-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Bruno Ace SC';
+    src: url('../assets/fonts/BrunoAce-Regular.ttf');
 }
 
 .previewScreenOne, .previewScreenTwo, .previewScreenThree, .previewScreenFour {
@@ -25,7 +30,9 @@
 
 
 .previewScreenTwo {
-
+    background-image: url('inquizitive.png');
+    background-size: cover;
+    background-position: center;
 }
 .previewScreenThree {
 
@@ -91,15 +98,14 @@
     align-items: center;
     background-color: #49426c;
     color: #ebc88b;
-
-
+    transition: 0.2s ease-in;
 }
 .iconAndTextOne:hover {
     color: #9c7e38;
     transition: 0.3s ease-in;
 }
 
-.projectLink {
+.projectOneLink {
     text-decoration: none;
 }
 
@@ -133,6 +139,54 @@
     }
   }
 
+.projectHeaderTwo {
+    align-items: center;
+    background-color: #F7F4E9;
+    color: #E40C2B;
+    display: flex;
+    font-family: 'Bruno Ace SC', cursive;
+    height: 20%;
+    justify-content: space-between;
+}
+.inAndItive {
+    color: #1d1d2c;
+    font-size: 40px;
+    transition: 0.2s ease-in;
+
+}
+.quizWord {
+    color: #E40C2B;
+    font-size: 60px;
+    transition: 0.2s ease-in;
+
+}
+.inquizitiveTitle:hover .inAndItive {
+    color: #E40C2B;
+    font-size: 60px;
+    transition: 0.3s ease-in;
+}
+.inquizitiveTitle:hover .quizWord {
+    color: #1d1d2c;
+    font-size: 40px;
+    transition: 0.3s ease-in;
+}
+
+.projectTwoLink {
+    text-decoration: none;
+}
+.projectTwoLink:hover {
+    color: blue;
+    transition: 0.3s ease-in;
+}
+.projectTwoInfo {
+    font-family: Comic;
+    font-size: 1.2rem;
+    margin-right: 5%;
+    width: 50%;
+    animation: growAndShrink 5s infinite;
+}
+
+
   @media screen and (max-width: 1000px) {
     .projectsTable {
         flex-direction: column;
@@ -142,3 +196,4 @@
     }
 
 }
+

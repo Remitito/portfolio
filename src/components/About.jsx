@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 
 const About = () => {
     return (
-        <>
+        <div style={{marginBottom: '50px'}}>
             <div className='scrollCont'>
                 <Link to="about" className='scroll' smooth={true} duration={500}/>
             </div>
@@ -56,7 +56,7 @@ const About = () => {
             </table>
             </div>
         </div>
-        </>
+        </div>
     )
 }
 
