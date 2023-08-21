@@ -18,24 +18,34 @@
     src: url('../assets/fonts/BrunoAce-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf');
+}
+
 .previewScreenOne, .previewScreenTwo, .previewScreenThree, .previewScreenFour {
     border-color: #f0f0f0;
     height: 60%;
+    background-size: cover;
+    background-position: center;
 }
 .previewScreenOne {
     background-image: url('canYouReadIt.png');
-    background-size: cover;
-    background-position: center;
 }
-
 
 .previewScreenTwo {
     background-image: url('inquizitive.png');
-    background-size: cover;
-    background-position: center;
 }
 .previewScreenThree {
+    background-image: url('groupPicker.png');
+}
+.previewScreenFour {
+    background-size: 90%;
+    background-image: url('comingSoon.gif');
+}
 
+.projectsHeader {
+    margin-bottom: 80px;
 }
 
 .projectsMain {
@@ -79,7 +89,7 @@
     flex-direction: column;
 }
 
-.projectHeaderOne, .projectHeaderTwo, .projectHeaderThree, .projectHeaderFour {
+.projectHeaderOne, .projectHeaderTwo, .projectHeaderThreeCont, .projectHeaderFourCont {
     height: 20%;
 }
 
@@ -88,7 +98,6 @@
     font-family: BebasNeue;
     align-items: center;
     justify-content: space-between;
-    height: 20%;
     padding-left: 3%;
     background-color: #49426c;
     text-align: center;
@@ -122,10 +131,14 @@
 .projectOneInfo {
     color: #ebc88b;
     font-family: Comic;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-right: 5%;
     width: 50%;
     animation: growAndShrink 5s infinite;
+}
+.projectOneInfo:hover, .projectTwoInfo:hover {
+    animation: none;
+    transform: scale(1);
 }
 @keyframes growAndShrink {
     0% {
@@ -145,9 +158,50 @@
     color: #E40C2B;
     display: flex;
     font-family: 'Bruno Ace SC', cursive;
-    height: 20%;
     justify-content: space-between;
 }
+.projectHeaderThreeCont {
+    align-items: center;
+    display: flex;
+    background-color: #fcde67;
+    justify-content: space-between;
+}
+.projectHeaderThree {
+    font-size: 40px;
+    font-family: "Open Sans";
+    font-weight: 500;
+    height: 60%;
+    color: black;
+    margin-left: 15px;
+    border-right: 4px solid black;
+    animation: cursor infinite, typing 7s infinite steps(16);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+    @keyframes cursor{
+        0%, 100%{border-color: black;}
+        50%{border-color: black;}
+    }
+
+    @keyframes typing{
+        0%{ width: 0ch}
+        30%{ width: 11ch;} 
+        80%{ width: 11ch;} 
+        90%{ width: 0ch;} 
+        100%{ width: 0ch;} 
+    }
+
+.projectHeaderFourCont {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.projectHeaderFour {
+    margin-left: 15px;
+}
+
 .inAndItive {
     color: #1d1d2c;
     font-size: 40px;
@@ -160,6 +214,10 @@
     transition: 0.2s ease-in;
 
 }
+.inquizitiveTitle {
+    margin-left: 15px;
+}
+
 .inquizitiveTitle:hover .inAndItive {
     color: #E40C2B;
     font-size: 60px;
@@ -171,16 +229,16 @@
     transition: 0.3s ease-in;
 }
 
-.projectTwoLink {
+.projectTwoLink, .projectThreeLink {
     text-decoration: none;
 }
 .projectTwoLink:hover {
     color: blue;
     transition: 0.3s ease-in;
 }
-.projectTwoInfo {
+.projectTwoInfo, .projectThreeInfo, .projectFourInfo {
     font-family: Comic;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-right: 5%;
     width: 50%;
     animation: growAndShrink 5s infinite;

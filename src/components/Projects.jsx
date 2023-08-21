@@ -27,7 +27,7 @@ const Projects = () => {
                         </div>
                         <div className='previewScreenOne'/>
                         <div className='projectStack'>
-                        Node, Express, MongoDB, Mongoose, React, Cheerio, HTML, CSS, Styled Components
+                        Node, Express, MongoDB, Mongoose, React, Axios, Cheerio, HTML, CSS, Styled Components
                         </div>
                     </div>
                     <div className='projectCont'>
@@ -45,18 +45,34 @@ const Projects = () => {
                         </div>
                         <div className='previewScreenTwo'></div>
                         <label className='projectStack'>
-                        Node, Express, MongoDB, Mongoose, React,  Redux, HTML, CSS, Ant Design, Vite
+                        Node, Express, MongoDB, Mongoose, React,  Redux, Axios, HTML, CSS, Ant Design, Vite
                         </label>
                     </div>
                     <div className='projectCont'>
-                        <h2 className='projectHeaderThree'>Group Picker</h2>
+                        <div className='projectHeaderThreeCont'>
+                            <a className='projectThreeLink' href='https://remitito.github.io/group-picker/'>
+                                <div className='projectHeaderThree'>Group Picker</div>
+                            </a>
+                            <label className='projectThreeInfo'>
+                                    A website for quickly making groups with options like an "Avoid List" to keep troublesome students apart and switching students without restarting the process
+                            </label>
+                        </div>
                         <div className='previewScreenThree'></div>
-                        <label className='projectStack'></label>
+                        <label className='projectStack'>
+                        React, HTML, CSS, Styled Components
+                        </label>
                     </div>
                     <div className='projectCont'>
-                        <h2 className='projectHeaderFour'>Group Picker</h2>
+                        <div className='projectHeaderFourCont'>
+                            <label className='projectHeaderFour'>Coming Soon...</label>
+                            <label className='projectFourInfo'>
+                                A cross-platform mobile app that uses ChatGPT combined with text-to-speech services for authentic spoken language practice with a chatbot
+                            </label>
+                        </div>
                         <div className='previewScreenFour'></div>
-                        <label className='projectStack'></label>
+                        <label className='projectStack'>
+                            React Native, React Navigation, Redux, Open AI GPT-4 API, React Native TTS, Axios, Node, Express, MongoDB, Mongoose, Jest
+                        </label>
                     </div>
                 </div>
             </div>
