@@ -70,6 +70,7 @@ const Projects = () => {
                             </label>
                         </div>
                         <div className='previewScreenFour'></div>
+                        <label>GIF by <a className='projectFourLink' href='https://giphy.com/Izispik/'>Izispik</a></label>
                         <label className='projectStack'>
                             React Native, React Navigation, Redux, Open AI GPT-4 API, React Native TTS, Axios, Node, Express, MongoDB, Mongoose, Jest
                         </label>

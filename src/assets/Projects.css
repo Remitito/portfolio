@@ -43,6 +43,9 @@
     background-size: 90%;
     background-image: url('comingSoon.gif');
 }
+.projectFourLink:hover {
+    color: #E40C2B;
+}
 
 .projectsHeader {
     margin-bottom: 80px;
@@ -53,13 +56,14 @@
     font-family: Roboto;
     font-size: 2rem;
     margin-top: 100px;
+    margin-bottom: 100px;
     text-align: center;
 }
 
 .projectsTable {
     display: flex;
     flex-wrap: wrap;
-    height: 700px;
+    height: 1400px;
     margin: auto;
     margin-bottom: 50px;
     width: 100%;
@@ -84,7 +88,8 @@
     border-color: #f0f0f0;
     display: flex;
     margin: auto;
-    height: 100%;
+    margin-bottom: 50px;
+    height: 50%;
     width: 45%;
     flex-direction: column;
 }
@@ -136,7 +141,7 @@
     width: 50%;
     animation: growAndShrink 5s infinite;
 }
-.projectOneInfo:hover, .projectTwoInfo:hover {
+.projectOneInfo:hover, .projectTwoInfo:hover, .projectThreeInfo:hover, .projectFourInfo:hover {
     animation: none;
     transform: scale(1);
 }
@@ -229,7 +234,7 @@
     transition: 0.3s ease-in;
 }
 
-.projectTwoLink, .projectThreeLink {
+.projectTwoLink, .projectThreeLink, .projectFourLink {
     text-decoration: none;
 }
 .projectTwoLink:hover {
@@ -246,12 +251,14 @@
 
 
   @media screen and (max-width: 1000px) {
-    .projectsTable {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        height: fit-content;
-        max-height: fit-content;
+        .projectsTable {
+            display: block;
+        }
+        .projectsMain {
+            min-height: 3200px;
+        }
+        .projectCont {
+            width: 100%;
+        }
     }
-
-}
 

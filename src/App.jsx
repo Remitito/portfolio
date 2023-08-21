@@ -4,6 +4,7 @@ import About from './components/About';
 import Home from './components/Home'
 import Projects from './components/Projects';
 import Navbar from './components/Navbar'
+import Contact from './components/Contact';
 import './App.css';
 
 const App = () => {
@@ -14,11 +15,14 @@ const App = () => {
       <Element style={{height: "800px"}} name="home">
           <Home />
       </Element>
-        <Element className='sectionEven' name="about">
+        <Element  name="about">
           <About />
         </Element>
-        <Element className='sectionOdd' name="projects">
+        <Element  name="projects">
           <Projects />
+        </Element>
+        <Element style={{backgroundColor: "#f0f0f0", height: "500px"}} name="contact">
+          <Contact />
         </Element>
       </div>
     </div>

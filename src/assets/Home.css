@@ -137,16 +137,23 @@
 }
 
     .bubble.top-left:hover {
-        background-image: url('spain.jpg');
-        background-size: 110%;
+        background-image: url('spain.png');
         color: transparent;
         animation: none;
         background-position: center;
+        background-size: cover;
     }
     .bubble.top-right:hover {
         background-image: url('china.png');
         background-size: 100% 125%; 
         background-position: 0% 0%; 
+        background-repeat: no-repeat;
+        color: transparent;
+    }
+    .bubble.bottom-right:hover {
+        background-image: url('uk.png');
+        background-size: cover;
+        background-position: center; 
         background-repeat: no-repeat;
         color: transparent;
     }
