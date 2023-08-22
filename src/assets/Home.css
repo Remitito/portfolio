@@ -137,7 +137,7 @@
 }
 
     .bubble.top-left:hover {
-        background-image: url('spain.png');
+        background-image: url('../assets/spain.png');
         color: transparent;
         animation: none;
         background-position: center;
