@@ -53,7 +53,7 @@
 
 .projectsMain {
     background-color: white;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 2rem;
     margin-top: 100px;
     margin-bottom: 180px;
@@ -73,7 +73,7 @@
 .projectStack {
     background-color: #f0f0f0;
     height: 20%;
-    font-family: Comic;
+    font-family: 'Comic';
     font-size: 1.7rem;
     text-align: center;
     display: flex;
@@ -101,7 +101,7 @@
 
 .projectHeaderOne {
     display: flex;
-    font-family: BebasNeue;
+    font-family: 'BebasNeue';
     align-items: center;
     justify-content: space-between;
     padding-left: 3%;
@@ -136,7 +136,7 @@
 }
 .projectOneInfo {
     color: #ebc88b;
-    font-family: Comic;
+    font-family: 'Comic';
     font-size: 1.4rem;
     margin-right: 5%;
     width: 50%;
