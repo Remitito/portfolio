@@ -12,6 +12,7 @@ const Projects = () => {
             </div>
             <div className='projectsMain'>
                 <h2 className='projectsHeader'>Projects</h2>
+                <h4 className='projectsSubHeader'>(Click a project's title to try it out!)</h4>
                 <div className='projectsTable'>
                     <div className='projectCont'>
                         <div className='projectHeaderOne'>
@@ -22,7 +23,7 @@ const Projects = () => {
                                 </div>
                             </a>
                             <label className='projectOneInfo'>
-                                    Can You Read It gives the CEFR level of any digital text, then stores it in a database sorted by level for other language learners to browse
+                                Can You Read It gives the CEFR level of any digital text, then stores it in a database sorted by level for other language learners to browse
                             </label>
                         </div>
                         <div className='previewScreenOne'/>

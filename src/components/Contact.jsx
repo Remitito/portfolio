@@ -2,6 +2,7 @@ import '../assets/Contact.css';
 import { Link } from 'react-scroll';
 import { BsFillTelephoneFill, BsGithub } from "react-icons/bs";
 import { MdEmail} from "react-icons/md";
+import {BiSolidDownload} from "react-icons/bi"
 
 const Contact = () => {
     return (
@@ -25,7 +26,11 @@ const Contact = () => {
                 <div className='contactRight'>
                 <h2 className='contactHeader'>My Latest CV</h2>
                 <div className='cvCont'>
-                    <a className='cvDownload' href='JackRosserCV.pdf' download>Download</a>
+                    
+                    <a className='cvDownload' href='JackRosserCV.pdf' download>
+                        <BiSolidDownload className='downloadLogo'></BiSolidDownload>
+                        <label className='downloadText'>Download</label>
+                    </a>
                 </div>
                 </div>
             </div>

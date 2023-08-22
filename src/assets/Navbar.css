@@ -26,7 +26,18 @@
 }
 
 .leftSection {
+    align-items: center;
+    display: flex;
     margin-left: 5%;
+}
+.photoCont {
+    background-image: url('portrait.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    margin-right: 10px;
+    height: 70px;
+    width: 50px;
 }
 
 .rightSection {

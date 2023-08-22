@@ -6,7 +6,9 @@ const Navbar = () => {
     return (
     <div className='navCont'>
         <div className="nav">
-            <div className='leftSection'>Jack Rosser
+            <div className='leftSection'>
+                <div className='photoCont'></div>
+                <label>Jack Rosser</label>
             </div>
             <div className='rightSection'>
                 <Link to="about" smooth={true} duration={500}>About</Link>

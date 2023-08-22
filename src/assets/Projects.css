@@ -56,7 +56,7 @@
     font-family: Roboto;
     font-size: 2rem;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 180px;
     text-align: center;
 }
 
@@ -71,6 +71,7 @@
 }
 
 .projectStack {
+    background-color: #f0f0f0;
     height: 20%;
     font-family: Comic;
     font-size: 1.7rem;
@@ -78,7 +79,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
@@ -141,6 +142,14 @@
     width: 50%;
     animation: growAndShrink 5s infinite;
 }
+
+.projectOneButton {
+    background-color: #49426c;
+    color: #ebc88b;
+    font-family: BebasNeue;
+    font-size: large;
+}
+
 .projectOneInfo:hover, .projectTwoInfo:hover, .projectThreeInfo:hover, .projectFourInfo:hover {
     animation: none;
     transform: scale(1);
@@ -156,6 +165,10 @@
       transform: scale(0.8);
     }
   }
+
+.projectsSubHeader {
+    font-family: Comic;
+}
 
 .projectHeaderTwo {
     align-items: center;
