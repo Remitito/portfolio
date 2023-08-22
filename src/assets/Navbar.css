@@ -31,7 +31,7 @@
     margin-left: 5%;
 }
 .photoCont {
-    background-image: url('portrait.png');
+    background-image: url('/portrait.png');
     background-position: center;
     background-size: cover;
     border-radius: 1rem;
