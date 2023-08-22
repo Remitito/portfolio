@@ -30,18 +30,18 @@
     background-position: center;
 }
 .previewScreenOne {
-    background-image: url('canYouReadIt.png');
+    background-image: url('/canYouReadIt.png');
 }
 
 .previewScreenTwo {
-    background-image: url('inquizitive.png');
+    background-image: url('/inquizitive.png');
 }
 .previewScreenThree {
-    background-image: url('groupPicker.png');
+    background-image: url('/groupPicker.png');
 }
 .previewScreenFour {
     background-size: 90%;
-    background-image: url('comingSoon.gif');
+    background-image: url('/comingSoon.gif');
 }
 .projectFourLink:hover {
     color: #E40C2B;

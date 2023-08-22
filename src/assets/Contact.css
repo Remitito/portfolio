@@ -52,7 +52,7 @@
 }
 
 .cvCont {
-    background-image: url('cvPic.png');
+    background-image: url('/cvPic.png');
     background-size: cover;
     background-position: center;
     height: 300px;
