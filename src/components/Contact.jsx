@@ -27,7 +27,7 @@ const Contact = () => {
                 <h2 className='contactHeader'>My Latest CV</h2>
                 <div className='cvCont'>
                     
-                    <a className='cvDownload' href='JackRosserCV.pdf' download>
+                    <a className='cvDownload' href='CodingCV.pdf' download>
                         <BiSolidDownload className='downloadLogo'></BiSolidDownload>
                         <label className='downloadText'>Download</label>
                     </a>
