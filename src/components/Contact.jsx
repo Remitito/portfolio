@@ -19,7 +19,7 @@ const Contact = () => {
                         <div className='contactItemInfoCont'>
                             <label className='contactItemInfo'>07897271634</label>
                             <label className='contactItemInfo'>jrossot@protonmail.com</label>
-                            <label className='contactItemInfo'>https://github.com/Remitito/</label>
+                            <a href='https://github.com/Remitito/' className='contactItemLink'>https://github.com/Remitito/</a>
                         </div>
                     </div>
                 </div>

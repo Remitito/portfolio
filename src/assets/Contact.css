@@ -50,6 +50,14 @@
 .contactItemInfo, .contactItemLogo {
     height: 50px;
 }
+.contactItemLink {
+    color: black;
+    text-decoration: none;
+}
+.contactItemLink:hover {
+    color: purple;
+    text-decoration: underline;
+}
 
 .cvCont {
     background-image: url('/cvPic.png');
