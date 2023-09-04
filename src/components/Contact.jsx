@@ -17,21 +17,20 @@ const Contact = () => {
                             <BsGithub className='contactItemLogo'/>
                         </div>
                         <div className='contactItemInfoCont'>
-                            <label className='contactItemInfo'>07897271634</label>
-                            <label className='contactItemInfo'>jrossot@protonmail.com</label>
+                            <label className='contactItemInfo'>+447897271634</label>
+                            <label className='contactItemInfo'>jack.rosser@live.co.uk</label>
                             <a href='https://github.com/Remitito/' className='contactItemLink'>https://github.com/Remitito/</a>
                         </div>
                     </div>
                 </div>
                 <div className='contactRight'>
                 <h2 className='contactHeader'>My Latest CV</h2>
-                <div className='cvCont'>
-                    
-                    <a className='cvDownload' href='CodingCV.pdf' download>
-                        <BiSolidDownload className='downloadLogo'></BiSolidDownload>
-                        <label className='downloadText'>Download</label>
-                    </a>
-                </div>
+                    <div className='cvCont'>
+                        <a className='cvDownload' href='JackRosserCV.pdf' download>
+                            <BiSolidDownload className='downloadLogo'></BiSolidDownload>
+                            <label className='downloadText'>Download</label>
+                        </a>
+                    </div>
                 </div>
             </div>
         </>

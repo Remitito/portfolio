@@ -25,6 +25,31 @@
     cursor: pointer;
 }
 
+.navLinks {
+    position: relative;
+    display: inline-block;
+    color: black; 
+    transition: color 0.3s, border-bottom-color 0.3s;
+  }
+  
+  .navLinks::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s;
+  }
+  
+
+  
+  .navLinks:hover::before {
+    width: 100%;
+  }
+  
+
 .leftSection {
     align-items: center;
     display: flex;

@@ -11,9 +11,9 @@ const Navbar = () => {
                 <label>Jack Rosser</label>
             </div>
             <div className='rightSection'>
-                <Link to="about" smooth={true} duration={500}>About</Link>
-                <Link to="projects" smooth={true} duration={500}>Projects</Link>
-                <Link to="contact" smooth={true} duration={500}>Contact</Link>
+                <Link to="about" className='navLinks' smooth={true} duration={500}>About</Link>
+                <Link to="projects" className='navLinks' smooth={true} duration={500}>Projects</Link>
+                <Link to="contact" className='navLinks' smooth={true} duration={500}>Contact</Link>
             </div>
       </div>
     </div>
