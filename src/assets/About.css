@@ -125,3 +125,61 @@ table {
       width: 100%;
     }
   }
+
+  @media only screen and (max-width: 767px) {
+    .scrollCont {
+      display: none;
+    }
+      
+    .aboutHeading {
+        font-family: "Roboto";
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .aboutMain {
+      flex-direction: column;
+      margin-top: 0px;
+    }
+    
+    .leftAboutSection, .rightAboutSection {
+      margin: auto;
+      width: 95%;
+    }
+    
+    .aboutList li {
+      font-family: Comic;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-top: 20px;
+    }
+    
+
+    
+    table {
+      font-family: Comic;
+      font-size: 0.8rem;
+        border-collapse: collapse;
+      }
+      
+      th {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+      }
+      
+      td {
+        border: 1px solid #ccc;
+        padding: 2px;
+        text-align: center;
+      }
+      
+      tr:hover {
+        background-color: #f0f0f0;
+      }
+
+      .basicCol {
+        display: none;
+      }
+  }

@@ -4,3 +4,24 @@
   }
   
 
+.homeSection {
+  height: 800px;
+}
+
+.contactSection {
+  background-color: #f0f0f0;
+  height: 500px;
+}
+
+@media only screen and (max-width: 767px) {
+  .homeSection {
+    height: 570px;
+    padding: 0;
+    width: 100vw;
+  }
+
+  .contactSection {
+    background-color: #f0f0f0;
+    height: 700px;
+  }
+}

@@ -275,3 +275,85 @@
         }
     }
 
+    @media only screen and (max-width: 767px) {
+        .projectOneInfo, .projectTwoInfo, .projectThreeInfo, .projectFourInfo {
+            font-size: 1rem;
+            animation: none;
+            width: 50%;
+        }
+        .projectsMain {
+            margin: auto;
+        }
+        .projectStack {
+            font-size: 1.2rem;
+        }
+        .projectOneLink {
+            font-size: 20px;
+            width: 50%;
+        }
+        .projectOneLabel {
+            font-size: 20px;
+        }
+        .previewScreenOne {
+            background-size: cover;
+            animation: scrollBackgroundOne 5s infinite alternate; 
+        }
+        
+        @keyframes scrollBackgroundOne {
+            0% {
+                background-position: 15%;
+            }
+            100% {
+                background-position: 85%;
+            }
+        }
+        .inAndItive {
+            font-size: 1rem;
+        }
+        .inquizitiveTitle:hover .inAndItive {
+            font-size: 1.7rem;
+        }
+        .inquizitiveTitle:hover .quizWord {
+            font-size: 1rem;
+        }
+        .quizWord {
+            font-size: 1.7rem;
+        }
+        .previewScreenTwo {
+            background-size: cover;
+            animation: scrollBackgroundTwo 5s infinite alternate; 
+        }
+        @keyframes scrollBackgroundTwo {
+            0% {
+                background-position: 0%;
+            }
+            100% {
+                background-position: 100%;
+            }
+        }
+        .projectHeaderThree {
+            font-size: 1rem;
+        }
+        .projectHeaderThreeCont {
+            
+        }
+        .previewScreenThree {
+            background-size: auto 140%;    
+            animation: scrollBackgroundThree 5s infinite alternate;      
+        }
+        @keyframes scrollBackgroundThree {
+            0% {
+                background-position: 30%;
+            }
+            100% {
+                background-position: 70%;
+            }
+        }
+        .projectFourInfo {
+            font-size: 0.8rem;
+        }
+        .previewScreenFour {
+            background-size: cover;
+        }
+
+    }

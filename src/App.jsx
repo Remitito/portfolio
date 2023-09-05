@@ -12,7 +12,7 @@ const App = () => {
     <div>
       <Navbar/>
       <div className="sections">
-      <Element style={{height: "800px"}} name="home">
+      <Element className='homeSection' name="home">
           <Home />
       </Element>
         <Element  name="about">
@@ -21,7 +21,7 @@ const App = () => {
         <Element  name="projects">
           <Projects />
         </Element>
-        <Element style={{backgroundColor: "#f0f0f0", height: "500px"}} name="contact">
+        <Element className='contactSection' name="contact">
           <Contact />
         </Element>
       </div>

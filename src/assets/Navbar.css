@@ -70,3 +70,17 @@
     justify-content: space-evenly;
     width: 30%;
 }
+
+@media only screen and (max-width: 767px) {
+  .nav {
+    justify-content: space-evenly;
+  }
+  
+.navLinks {
+    visibility: hidden;
+  }
+
+.rightSection {
+    width: 0%;
+}
+}

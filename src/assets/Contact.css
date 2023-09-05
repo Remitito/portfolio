@@ -13,6 +13,8 @@
 .contactHeader {
     font-family: Roboto;
     font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .contactLeft {
     display: flex;
@@ -100,4 +102,26 @@
 }
 .downloadText {
     font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .contactMain {
+        flex-direction: column;
+        margin-top: 150px;
+        align-items: center;
+    }
+    .contactHeader {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .contactLeft, .contactRight {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    .contactItemInfo, .contactItemLink {
+        font-size: 1.5rem;
+    }
 }

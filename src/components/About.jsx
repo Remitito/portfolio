@@ -24,7 +24,7 @@ const About = () => {
                         <tr>
                         <th>Frontend</th>
                         <th>Backend</th>
-                        <th>Basic Level</th>
+                        <th className='basicCol'>Basic Level</th>
                         <th>Collaboration</th>
                         <th>Languages</th>
                         </tr>
@@ -33,21 +33,21 @@ const About = () => {
                         <tr>
                         <td>React JS, Redux</td>
                         <td>Node JS, Express</td>
-                        <td>Python</td>
+                        <td className='basicCol'>Python</td>
                         <td>Git, Slack, Trello</td>
                         <td>English</td>
                         </tr>
                         <tr>
                         <td>HTML, CSS</td>
                         <td>Mongo DB, Mongoose</td>
-                        <td>Java</td>
+                        <td className='basicCol'>Java</td>
                         <td>Scrums, Standups</td>
                         <td>Mandarin</td>
                         </tr>
                         <tr>
                         <td>Ant Design, Styled Components</td>
                         <td>Cheerio</td>
-                        <td>Haskell</td>
+                        <td className='basicCol'>Haskell</td>
                         <td>Pair Programming</td>
                         <td>Spanish</td>
                         </tr>

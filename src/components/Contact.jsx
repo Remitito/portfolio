@@ -9,7 +9,7 @@ const Contact = () => {
         <>
             <div className='contactMain'>
                 <div className='contactLeft'>
-                    <h2 className='contactHeader'>Contact</h2>
+                    <div className='contactHeader'>Contact</div>
                     <div className='contactMethodsCont'>
                         <div className='contactItemLogoCont'>
                             <BsFillTelephoneFill className='contactItemLogo'/>

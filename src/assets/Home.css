@@ -2,29 +2,7 @@
     font-family: 'Comic';
     src: url('../assets/fonts/ComicNeue-Regular.ttf');
 }
-@font-face {
-    font-family: 'Matador';
-    src: url('../assets/fonts/Matador-YzDj.ttf');
-}
 
-@font-face {
-    font-family: 'SnickerSnack';
-    src: url('../assets/fonts/SnickerSnack-BgDV.ttf');
-}
-
-@font-face {
-    font-family: 'SonOfTime';
-    src: url('../assets/fonts/Sonoftime-KwYA.ttf');
-}
-
-@font-face {
-    font-family: 'SmileySans';
-    src: url("../assets//fonts/SmileySans-Oblique.ttf");
-}
-@font-face {
-    font-family: 'Chopic';
-    src: url('../assets/fonts/Chopic3DFreeVersionRegular-MVqvv.ttf');
-}
 
 @font-face {
     font-family: 'Roboto';
@@ -46,7 +24,7 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    width: 60%;
+    width: auto;
 }
 
 .homeRight {
@@ -54,7 +32,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 35%;
+    width: auto;
 }
 
 .homeMain {
@@ -63,7 +41,6 @@
     justify-content: space-evenly;
     background-color: #f0f0f0;
     height: 750px;
-    width: 100%;
 }
 
 
@@ -130,7 +107,6 @@
 }
 
 
-/* Cursor blinking effect */
 @keyframes blink-caret {
     from, to { border-color: transparent; }
     50% { border-color: orange; }
@@ -159,9 +135,51 @@
     }
     
 
-/* @media screen and (min-width: 1200px) {
-    .homeLeft, .homeRight {
+@media only screen and (max-width: 767px) {
+    .hey {
+        font-family: Roboto;
+        font-size: 2rem;
+    }
+    .homeAbout {
+        font-family: Comic;
+        font-size: 1.5rem;
+    }
+    
+    .homeLeft {
+        text-align: center;
+        width: 40%;
+    }
+    
+    .homeRight {
+        display: flex;
+        flex-direction: column;
         width: 50%;
     }
+    
+    .homeMain {
+        display: flex;
+        flex-direction: row;
+        background-color: #f0f0f0;
+        height: 500px;
+        width: 100vw;
+    }
+    
+    .avatar {
+        height: 40%;
+    }
 
-} */
+    .bubble {
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+        width: 150px;
+        height: 60px;
+        border-radius: 20px;
+        }
+  
+  
+  .bubble.bottom-right, .bubble.top-left, .bubble.top-right, .bubble.bottom-left {
+      font-size: 1rem;
+             
+  }
+}
