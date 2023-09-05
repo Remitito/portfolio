@@ -139,7 +139,7 @@ table {
     
     .aboutMain {
       flex-direction: column;
-      margin-top: 0px;
+      margin-top: 60px;
     }
     
     .leftAboutSection, .rightAboutSection {

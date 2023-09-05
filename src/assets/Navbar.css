@@ -74,6 +74,7 @@
 @media only screen and (max-width: 767px) {
   .nav {
     justify-content: space-evenly;
+    margin-top: 20px;
   }
   
 .navLinks {
