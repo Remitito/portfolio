@@ -71,22 +71,33 @@
 }
 
 .projectStack {
-    background-color: #f0f0f0;
+    display: flex;
     height: 20%;
     font-family: 'Comic';
-    font-size: 1.7rem;
-    text-align: center;
+    font-size: 0.8rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     margin: auto;
 }
+.stackItem {
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 0.1px solid darkgray;
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    width: 10%;
+}
+.stackItem:hover {
+    color: darkgray;
+}
+
 
 
 .projectCont {
-    border: solid;
-    border-color: #f0f0f0;
+    border: 3px solid #f0f0f0;
     display: flex;
     margin: auto;
     margin-bottom: 50px;
@@ -140,7 +151,6 @@
     font-size: 1.4rem;
     margin-right: 5%;
     width: 50%;
-    animation: growAndShrink 5s infinite;
 }
 
 .projectOneButton {
@@ -150,21 +160,6 @@
     font-size: large;
 }
 
-.projectOneInfo:hover, .projectTwoInfo:hover, .projectThreeInfo:hover, .projectFourInfo:hover {
-    animation: none;
-    transform: scale(1);
-}
-@keyframes growAndShrink {
-    0% {
-      transform: scale(0.8);
-    }
-    50% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(0.8);
-    }
-  }
 
 .projectsSubHeader {
     font-family: Comic;
@@ -259,7 +254,6 @@
     font-size: 1.4rem;
     margin-right: 5%;
     width: 50%;
-    animation: growAndShrink 5s infinite;
 }
 
 

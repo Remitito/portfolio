@@ -28,7 +28,16 @@ const Projects = () => {
                         </div>
                         <div className='previewScreenOne'/>
                         <div className='projectStack'>
-                        Node, Express, MongoDB, Mongoose, React, Axios, Cheerio, HTML, CSS, Styled Components
+                            <div className='stackItem'>Node</div>
+                            <div className='stackItem'>Express</div>
+                            <div className='stackItem'>MongoDB</div>
+                            <div className='stackItem'>Mongoose</div>
+                            <div className='stackItem'>React</div>
+                            <div className='stackItem'>Axios</div>
+                            <div className='stackItem'>Cheerio</div>
+                            <div className='stackItem'>HTML</div>
+                            <div className='stackItem'>CSS</div>
+                            <div className='stackItem'>Styled Components</div>
                         </div>
                     </div>
                     <div className='projectCont'>
@@ -41,12 +50,21 @@ const Projects = () => {
                                 </div>
                             </a>
                             <label className='projectTwoInfo'>
-                                    Inquizitive is an interactive quiz that combines the best bits of the games which cannot be accessed in China
+                                    Inquizitive is an interactive quiz game for reviewing content, it was made after existing platforms were blocked due to regional internet restrictions
                             </label>
                         </div>
                         <div className='previewScreenTwo'></div>
                         <label className='projectStack'>
-                        Node, Express, MongoDB, Mongoose, React,  Redux, Axios, HTML, CSS, Ant Design, Vite
+                            <div className='stackItem'>Node</div>
+                            <div className='stackItem'>Express</div>
+                            <div className='stackItem'>MongoDB</div>
+                            <div className='stackItem'>Mongoose</div>
+                            <div className='stackItem'>React</div>
+                            <div className='stackItem'>Redux</div>
+                            <div className='stackItem'>Axios</div>
+                            <div className='stackItem'>HTML</div>
+                            <div className='stackItem'>CSS</div>
+                            <div className='stackItem'>Ant Design</div>
                         </label>
                     </div>
                     <div className='projectCont'>
@@ -60,7 +78,10 @@ const Projects = () => {
                         </div>
                         <div className='previewScreenThree'></div>
                         <label className='projectStack'>
-                        React, HTML, CSS, Styled Components
+                            <div className='stackItem'>React</div>
+                            <div className='stackItem'>HTML</div>
+                            <div className='stackItem'>CSS</div>
+                            <div className='stackItem'>Styled Components</div>
                         </label>
                     </div>
                     <div className='projectCont'>
@@ -73,7 +94,15 @@ const Projects = () => {
                         <div className='previewScreenFour'></div>
                         <label>GIF by <a className='projectFourLink' href='https://giphy.com/Izispik/'>Izispik</a></label>
                         <label className='projectStack'>
-                            React Native, React Navigation, Redux, Open AI GPT-4 API, React Native TTS, Axios, Node, Express, MongoDB, Mongoose, Jest
+                            <div className='stackItem'>React Native</div>
+                            <div className='stackItem'>TTS</div>
+                            <div className='stackItem'>Redux</div>
+                            <div className='stackItem'>GPT-4 API</div>
+                            <div className='stackItem'>Node</div>
+                            <div className='stackItem'>Express</div>
+                            <div className='stackItem'>MongoDB</div>
+                            <div className='stackItem'>Mongoose</div>
+                            <div className='stackItem'>Jest</div>
                         </label>
                     </div>
                 </div>
