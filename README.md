@@ -1,8 +1,7 @@
-# React + Vite
+This is a simple portfolio site with links to things I have built and some information about me.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Version**
+The live version can be found at https://jackrosser.com
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Tech Stack**
+This is a single-page static site, built using React, with react-scroll implemented for smoother navigation.
