@@ -199,6 +199,7 @@
     animation: cursor infinite, typing 7s infinite steps(16);
     white-space: nowrap;
     overflow: hidden;
+    width: 160px; 
 }
 
     @keyframes cursor{
@@ -254,12 +255,43 @@
 .projectTwoLink, .projectThreeLink, .projectFourLink {
     text-decoration: none;
 }
+
 .projectOneInfo, .projectTwoInfo, .projectThreeInfo, .projectFourInfo {
     font-family: 'Comic';
     font-size: 1.2rem;
     margin-right: 5%;
     width: 60%;
 }
+
+.gitLogoOne {
+    color: #ebc88b;
+    transition: 0.2s ease-in;
+}
+
+.gitLogoOne:hover {
+    color: #9c7e38;
+    transition: 0.3s ease-in;
+}
+.gitLogoTwo {
+    color: #1d1d2c;
+    margin-top: 10px;
+    transition: 0.2s ease-in;
+}
+.gitLogoTwo:hover {
+    color: #E40C2B;
+    transition: 0.3s ease-in;
+}
+.gitLogoThree {
+    color: #1d1d2c;
+    margin-top: 10px;
+    margin-left: 120px;
+    transition: 0.2s ease-in;
+}
+.gitLogoThree:hover {
+    color:#51c3fc;
+    transition: 0.3s ease-in;
+}
+
 
   @media screen and (max-width: 1000px) {
         .projectsTable {

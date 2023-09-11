@@ -3,6 +3,7 @@ import '../assets/Projects.css'
 import { Link } from 'react-scroll';
 import canYouReadIt from '../assets/videos/canYouReadIt.mp4'
 import {IoLibrarySharp} from 'react-icons/io5'
+import {BsGithub } from "react-icons/bs";
 
 const Projects = () => {
     return (
@@ -16,12 +17,17 @@ const Projects = () => {
                 <div className='projectsTable'>
                     <div className='projectCont'>
                         <div className='projectHeaderOne'>
-                            <a className='projectOneLink' href='https://can-you-read-it-atd5.onrender.com/'>
-                                <div className='iconAndTextOne'>
-                                    <IoLibrarySharp className='projectOneLogo' /> 
-                                    <label className='projectOneLabel'>CAN YOU READ IT?</label>
-                                </div>
-                            </a>
+                            <div className='projectTitleCont'>
+                                <a className='projectOneLink' href='https://can-you-read-it-atd5.onrender.com/'>
+                                    <div className='iconAndTextOne'>
+                                        <IoLibrarySharp className='projectOneLogo' /> 
+                                        <label className='projectOneLabel'>CAN YOU READ IT?</label>
+                                    </div>
+                                </a>
+                                <a href='https://github.com/Remitito/cyri-client'>
+                                    <BsGithub className='gitLogoOne'/>
+                                </a>
+                            </div>
                             <label className='projectOneInfo'>
                                 Can You Read It gives the CEFR level of any digital text, then stores it in a database sorted by level for other language learners to browse
                             </label>
@@ -30,13 +36,18 @@ const Projects = () => {
                     </div>
                     <div className='projectCont'>
                         <div className='projectHeaderTwo'>
-                            <a className='projectTwoLink' href='https://inquizitive-l7wp.onrender.com/'>
-                                <div className='inquizitiveTitle'>
-                                    <label className='inAndItive'>In</label>
-                                    <label className='quizWord'>QUIZ</label>
-                                    <label className='inAndItive'>itive</label>
-                                </div>
-                            </a>
+                            <div className='projectTitleCont'>
+                                <a className='projectTwoLink' href='https://inquizitive-l7wp.onrender.com/'>
+                                    <div className='inquizitiveTitle'>
+                                        <label className='inAndItive'>In</label>
+                                        <label className='quizWord'>QUIZ</label>
+                                        <label className='inAndItive'>itive</label>
+                                    </div>
+                                </a>
+                                <a href='https://github.com/Remitito/quiz-game-client'>
+                                    <BsGithub className='gitLogoTwo'/>
+                                </a>
+                            </div>
                             <label className='projectTwoInfo'>
                                     An interactive quiz review game that was made after existing platforms were blocked due to regional internet restrictions
                             </label>
@@ -44,10 +55,17 @@ const Projects = () => {
                         <div className='previewScreenTwo'></div>
                     </div>
                     <div className='projectCont'>
-                        <div className='projectHeaderThreeCont'>
-                            <a className='projectThreeLink' href='https://remitito.github.io/group-picker/'>
-                                <div className='projectHeaderThree'>Group Picker</div>
-                            </a>
+                            <div className='projectHeaderThreeCont'>
+                                <div className='projectTitleCont'>
+                                    <div style={{width: '100px'}}>
+                                        <a className='projectThreeLink' href='https://remitito.github.io/group-picker/'>
+                                            <div className='projectHeaderThree'>Group Picker</div>
+                                        </a>
+                                    </div>
+                                        <a href='https://github.com/Remitito/group-picker'>
+                                            <BsGithub className='gitLogoThree'/>
+                                        </a>
+                                </div>                    
                             <label className='projectThreeInfo'>
                                     A website for quickly making groups with an "Avoid List" to keep disruptive students apart and the ability to edit groups without restarting the process
                             </label>
