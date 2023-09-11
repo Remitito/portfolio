@@ -38,7 +38,7 @@ const Projects = () => {
                                 </div>
                             </a>
                             <label className='projectTwoInfo'>
-                                    Inquizitive is an interactive quiz game for reviewing content, it was made after existing platforms were blocked due to regional internet restrictions
+                                    An interactive quiz review game that was made after existing platforms were blocked due to regional internet restrictions
                             </label>
                         </div>
                         <div className='previewScreenTwo'></div>
@@ -49,7 +49,7 @@ const Projects = () => {
                                 <div className='projectHeaderThree'>Group Picker</div>
                             </a>
                             <label className='projectThreeInfo'>
-                                    A website for quickly making groups with options like an "Avoid List" to keep troublesome students apart and switching students without restarting the process
+                                    A website for quickly making groups with an "Avoid List" to keep disruptive students apart and the ability to edit groups without restarting the process
                             </label>
                         </div>
                         <div className='previewScreenThree'></div>
@@ -58,7 +58,7 @@ const Projects = () => {
                         <div className='projectHeaderFourCont'>
                             <label className='projectHeaderFour'>Coming Soon...</label>
                             <label className='projectFourInfo'>
-                                A cross-platform mobile app that uses ChatGPT combined with text-to-speech services for authentic spoken language practice with a chatbot
+                                A cross-platform React Native app that uses ChatGPT combined with text-to-speech services for authentic spoken language practice with a chatbot
                             </label>
                         </div>
                         <div className='previewScreenFour'></div>

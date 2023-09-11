@@ -12,7 +12,7 @@ const About = () => {
                 <div className='leftAboutSection'>
                     <h2 className='aboutHeading'>About Me</h2>
                     <ul className='aboutList'>
-                        <li>I began learning to code while working in China; I did many online courses and practice projects before starting a master's degree in Computer Science in 2021.</li>
+                        <li>I began learning to code to while working in China; I did many online courses and practice projects before starting a master's degree in Computer Science in 2021.</li>
                         <li> I have used the MERN stack to build web apps that help students/teachers in China</li>
                         <li>I am looking for a full time junior developer position in an English, Chinese, or Spanish-speaking company (UK-based or remote) </li>
                     </ul>
