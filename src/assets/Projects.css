@@ -25,7 +25,7 @@
 
 .previewScreenOne, .previewScreenTwo, .previewScreenThree, .previewScreenFour {
     border-color: #f0f0f0;
-    height: 60%;
+    height: 70%;
     background-size: cover;
     background-position: center;
 }
@@ -46,9 +46,10 @@
 .projectFourLink:hover {
     color: #E40C2B;
 }
-
-.projectsHeader {
-    margin-bottom: 80px;
+.projectFourPicInfo {
+    font-family: 'Comic';
+    font-size: 1.2rem;
+    padding: 10px;
 }
 
 .projectsMain {
@@ -60,10 +61,25 @@
     text-align: center;
 }
 
+
+
+.inAndItive {
+    color: #1d1d2c;
+    font-size: 40px;
+    transition: 0.2s ease-in;
+}
+
+.quizWord {
+    color: #E40C2B;
+    font-size: 60px;
+    transition: 0.2s ease-in;
+}
+
+
 .projectsTable {
     display: flex;
     flex-wrap: wrap;
-    height: 1400px;
+    height: 1200px;
     margin: auto;
     margin-bottom: 50px;
     width: 100%;
@@ -107,7 +123,7 @@
 }
 
 .projectHeaderOne, .projectHeaderTwo, .projectHeaderThreeCont, .projectHeaderFourCont {
-    height: 20%;
+    height: 30%;
 }
 
 .projectHeaderOne {
@@ -153,13 +169,6 @@
     width: 50%;
 }
 
-.projectOneButton {
-    background-color: #49426c;
-    color: #ebc88b;
-    font-family: BebasNeue;
-    font-size: large;
-}
-
 
 .projectsSubHeader {
     font-family: Comic;
@@ -180,12 +189,12 @@
     justify-content: space-between;
 }
 .projectHeaderThree {
-    font-size: 40px;
+    font-size: 30px;
     font-family: "Open Sans";
     font-weight: 500;
     height: 60%;
     color: black;
-    margin-left: 15px;
+    margin-left: 20px;
     border-right: 4px solid black;
     animation: cursor infinite, typing 7s infinite steps(16);
     white-space: nowrap;
@@ -217,45 +226,40 @@
 
 .inAndItive {
     color: #1d1d2c;
-    font-size: 40px;
+    font-size: 25px;
     transition: 0.2s ease-in;
 
 }
 .quizWord {
     color: #E40C2B;
-    font-size: 60px;
+    font-size: 35px;
     transition: 0.2s ease-in;
-
 }
+
 .inquizitiveTitle {
     margin-left: 15px;
 }
 
 .inquizitiveTitle:hover .inAndItive {
     color: #E40C2B;
-    font-size: 60px;
+    font-size: 35px;
     transition: 0.3s ease-in;
 }
 .inquizitiveTitle:hover .quizWord {
     color: #1d1d2c;
-    font-size: 40px;
+    font-size: 25px;
     transition: 0.3s ease-in;
 }
 
 .projectTwoLink, .projectThreeLink, .projectFourLink {
     text-decoration: none;
 }
-.projectTwoLink:hover {
-    color: blue;
-    transition: 0.3s ease-in;
-}
-.projectTwoInfo, .projectThreeInfo, .projectFourInfo {
-    font-family: Comic;
-    font-size: 1.4rem;
+.projectOneInfo, .projectTwoInfo, .projectThreeInfo, .projectFourInfo {
+    font-family: 'Comic';
+    font-size: 1.2rem;
     margin-right: 5%;
-    width: 50%;
+    width: 60%;
 }
-
 
   @media screen and (max-width: 1000px) {
         .projectsTable {
@@ -327,9 +331,6 @@
         }
         .projectHeaderThree {
             font-size: 1rem;
-        }
-        .projectHeaderThreeCont {
-            
         }
         .previewScreenThree {
             background-size: auto 140%;    

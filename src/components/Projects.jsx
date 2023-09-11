@@ -27,18 +27,6 @@ const Projects = () => {
                             </label>
                         </div>
                         <div className='previewScreenOne'/>
-                        <div className='projectStack'>
-                            <div className='stackItem'>Node</div>
-                            <div className='stackItem'>Express</div>
-                            <div className='stackItem'>MongoDB</div>
-                            <div className='stackItem'>Mongoose</div>
-                            <div className='stackItem'>React</div>
-                            <div className='stackItem'>Axios</div>
-                            <div className='stackItem'>Cheerio</div>
-                            <div className='stackItem'>HTML</div>
-                            <div className='stackItem'>CSS</div>
-                            <div className='stackItem'>Styled Components</div>
-                        </div>
                     </div>
                     <div className='projectCont'>
                         <div className='projectHeaderTwo'>
@@ -54,18 +42,6 @@ const Projects = () => {
                             </label>
                         </div>
                         <div className='previewScreenTwo'></div>
-                        <label className='projectStack'>
-                            <div className='stackItem'>Node</div>
-                            <div className='stackItem'>Express</div>
-                            <div className='stackItem'>MongoDB</div>
-                            <div className='stackItem'>Mongoose</div>
-                            <div className='stackItem'>React</div>
-                            <div className='stackItem'>Redux</div>
-                            <div className='stackItem'>Axios</div>
-                            <div className='stackItem'>HTML</div>
-                            <div className='stackItem'>CSS</div>
-                            <div className='stackItem'>Ant Design</div>
-                        </label>
                     </div>
                     <div className='projectCont'>
                         <div className='projectHeaderThreeCont'>
@@ -77,12 +53,6 @@ const Projects = () => {
                             </label>
                         </div>
                         <div className='previewScreenThree'></div>
-                        <label className='projectStack'>
-                            <div className='stackItem'>React</div>
-                            <div className='stackItem'>HTML</div>
-                            <div className='stackItem'>CSS</div>
-                            <div className='stackItem'>Styled Components</div>
-                        </label>
                     </div>
                     <div className='projectCont'>
                         <div className='projectHeaderFourCont'>
@@ -92,18 +62,7 @@ const Projects = () => {
                             </label>
                         </div>
                         <div className='previewScreenFour'></div>
-                        <label>GIF by <a className='projectFourLink' href='https://giphy.com/Izispik/'>Izispik</a></label>
-                        <label className='projectStack'>
-                            <div className='stackItem'>React Native</div>
-                            <div className='stackItem'>TTS</div>
-                            <div className='stackItem'>Redux</div>
-                            <div className='stackItem'>GPT-4 API</div>
-                            <div className='stackItem'>Node</div>
-                            <div className='stackItem'>Express</div>
-                            <div className='stackItem'>MongoDB</div>
-                            <div className='stackItem'>Mongoose</div>
-                            <div className='stackItem'>Jest</div>
-                        </label>
+                        <label className='projectFourPicInfo'>GIF by <a className='projectFourLink' href='https://giphy.com/Izispik/'>Izispik</a></label>
                     </div>
                 </div>
             </div>
