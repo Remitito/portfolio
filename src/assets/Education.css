@@ -1,0 +1,143 @@
+.educationHeading {
+    font-family: "Roboto";
+    font-size: 3rem;
+    text-align: center;
+}
+
+.educationMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.leftEducationSection {
+    margin-left: 3%;
+    width: 35%;
+}
+
+.educationLabel {
+  font-family: Comic;
+  font-size: 2rem;
+}
+
+.photoFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 30vw; 
+  height: 50vh; 
+  margin: auto; 
+}
+
+.photoTitle {
+  font-weight: 900;
+  height: 30px;
+  font-family: 'Comic';
+  font-size: 2rem;  
+  padding: 10px;
+  text-align: center;
+  text-decoration: underline;
+  width: 100%;
+}
+
+.photoFrame img {
+  border: solid 3px;
+  border-radius: 3rem;
+  height: 80%;
+  width: 80%;
+  object-fit: cover; 
+}
+.photoInfo {
+  font-family: 'Comic';
+  font-size: 1.5rem;
+  height: 20%;
+  margin-top: 10px;
+  width: 80%;
+  text-align: center;
+}
+
+
+
+.educationList li {
+  font-family: Comic;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-top: 20px;
+}
+
+.rightEducationSection {
+    margin-right: 4%;
+    width: 50%;
+}
+
+table {
+  font-family: Comic;
+  font-size: 1.5rem;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  td {
+    border: 1px solid #ccc;
+    padding: 18px;
+    text-align: center;
+  }
+  
+  tr:hover {
+    background-color: #f0f0f0;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .educationMain {
+      flex-direction: column;
+    }
+    .leftEducationSection, .rightEducationSection {
+      margin: auto;
+      width: 100%;
+    }
+
+    .photoFrame {
+      width: 60vh;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+      
+    .educationHeading {
+        font-family: "Roboto";
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .educationMain {
+      flex-direction: column;
+      margin-top: 60px;
+    }
+    
+    .leftEducationSection, .rightEducationSection {
+      margin: auto;
+      width: 95%;
+    }
+    
+    .educationList li {
+      font-family: Comic;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-top: 20px;
+    }
+
+    .photoFrame {
+      width: 80vw;
+      height: 70vh;
+    }
+    
+
+  }

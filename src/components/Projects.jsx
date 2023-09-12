@@ -8,9 +8,6 @@ import {BsGithub } from "react-icons/bs";
 const Projects = () => {
     return (
         <>
-            <div className='scrollCont'>
-                <Link to="projects" className='scroll' smooth={true} duration={500}/>
-            </div>
             <div className='projectsMain'>
                 <h2 className='projectsHeader'>Projects</h2>
                 <h4 className='projectsSubHeader'>(Click a project's title to try it out!)</h4>
@@ -39,9 +36,9 @@ const Projects = () => {
                             <div className='projectTitleCont'>
                                 <a className='projectTwoLink' href='https://inquizitive-l7wp.onrender.com/'>
                                     <div className='inquizitiveTitle'>
-                                        <label className='inAndItive'>In</label>
-                                        <label className='quizWord'>QUIZ</label>
-                                        <label className='inAndItive'>itive</label>
+                                        <div className='inAndItive'>In</div>
+                                        <div className='quizWord'>QUIZ</div>
+                                        <div className='inAndItive'>itive</div>
                                     </div>
                                 </a>
                                 <a href='https://github.com/Remitito/quiz-game-client'>

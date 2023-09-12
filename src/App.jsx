@@ -5,6 +5,7 @@ import Home from './components/Home'
 import Projects from './components/Projects';
 import Navbar from './components/Navbar'
 import Contact from './components/Contact';
+import Education from './components/Education';
 import './App.css';
 
 const App = () => {
@@ -17,6 +18,9 @@ const App = () => {
       </Element>
         <Element  name="about">
           <About />
+        </Element>
+        <Element  name="education">
+          <Education />
         </Element>
         <Element  name="projects">
           <Projects />

@@ -238,6 +238,9 @@
 }
 
 .inquizitiveTitle {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
     margin-left: 15px;
 }
 
@@ -298,7 +301,7 @@
             display: block;
         }
         .projectsMain {
-            min-height: 3200px;
+            min-height: 2700px;
         }
         .projectCont {
             width: 100%;
@@ -312,6 +315,7 @@
             width: 50%;
         }
         .projectsMain {
+            min-height: 2700px;
             margin: auto;
         }
         .projectStack {

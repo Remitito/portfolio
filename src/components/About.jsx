@@ -1,19 +1,15 @@
 import React from 'react';
 import '../assets/About.css'
-import { Link } from 'react-scroll';
 
 const About = () => {
     return (
-        <div style={{marginBottom: '100px'}}>
-            <div className='scrollCont'>
-                <Link to="about" className='scroll' smooth={true} duration={500}/>
-            </div>
+        <div>
             <div className='aboutMain'>
                 <div className='leftAboutSection'>
                     <h2 className='aboutHeading'>About Me</h2>
                     <ul className='aboutList'>
-                        <li>I began learning to code to while working in China; I did many online courses and practice projects before starting a master's degree in Computer Science in 2021.</li>
-                        <li> I have used the MERN stack to build web apps that help students/teachers in China</li>
+                        <li>I learned to code to create solutions to educational challenges I faced while working as a teacher</li>
+                        <li>I have built several websites using the MERN stack which are used by students and teachers in China (see Projects section)</li>
                         <li>I am looking for a full time junior developer position in an English, Chinese, or Spanish-speaking company (UK-based or remote) </li>
                     </ul>
                 </div>
@@ -51,7 +47,6 @@ const About = () => {
                         <td>Pair Programming</td>
                         <td>Spanish</td>
                         </tr>
-
                     </tbody>
                 </table>
                 </div>
