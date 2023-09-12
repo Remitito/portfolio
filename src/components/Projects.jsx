@@ -4,8 +4,21 @@ import { Link } from 'react-scroll';
 import canYouReadIt from '../assets/videos/canYouReadIt.mp4'
 import {IoLibrarySharp} from 'react-icons/io5'
 import {BsGithub } from "react-icons/bs";
+import { useState, useEffect } from 'react';
 
 const Projects = () => {
+    const [photos] = useState(['one', 'two', 'three', 'four', 'five', 'six', 'seven'])
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+          setCurrentIndex((prevIndex) => (prevIndex + 1) % photos.length);
+        }, 3000);
+    
+        return () => {
+          clearInterval(interval);
+        };
+      }, [photos]);
     return (
         <>
             <div className='projectsMain'>

@@ -7,7 +7,7 @@ import { Link } from 'react-scroll';
 
 const Home = () => {
     return (
-        <>
+        <div>
             <div className='homeMain'>
                 <div className='homeLeft'>
                     <div className='homeTextCont'>
@@ -25,7 +25,7 @@ const Home = () => {
             <div className='scrollCont'>
                 <Link to="about" className='scroll' smooth={true} duration={500}/>
             </div>
-        </>
+        </div>
     );
 };
 

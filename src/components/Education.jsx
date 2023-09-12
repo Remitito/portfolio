@@ -5,11 +5,11 @@ import { useState, useEffect } from 'react';
 
 const Education = () => {
     const [interests] = useState(['OCR', 'Cinema', 'Writing', 'Boxing', 'Gaming'])
-    const [info] = useState(['In 2023 I completed the Spartan Trifecta across China and England',
+    const [info] = useState(['In 2023, I completed the Spartan Trifecta across China and England',
                             'My favorite directors are Hitchcock and Scorsese',
-                        'I had an essay published in a medical humanities journal: https://hekint.org/2019/04/30/something-monomanical-obsession-and-the-unity-of-effect/',
+                        'I had an essay published in Hektoen International medical humanities journal',
                         'My favorite boxers are Inoue and Canelo',
-                        'I enjoy Bethesda and Nintendo games most'    
+                        'I particularly enjoy Bethesda and Nintendo games'    
                     ])
     const [currentIndex, setCurrentIndex] = useState(0);
 
