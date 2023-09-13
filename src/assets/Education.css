@@ -1,3 +1,5 @@
+
+
 .educationHeading {
     font-family: "Roboto";
     font-size: 3rem;
@@ -8,6 +10,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: -8%;
 }
 
 .leftEducationSection {
@@ -25,7 +28,7 @@
   flex-direction: column;
   align-items: center; 
   width: 30vw; 
-  height: 30vh; 
+  height: 50vh; 
   margin: auto; 
 }
 
@@ -36,16 +39,16 @@
   font-size: 2rem;  
   padding: 10px;
   text-align: center;
-  text-decoration: underline;
   width: 100%;
 }
 
 .photoFrame img {
   border: solid 3px;
   border-radius: 3rem;
-  height: 80%;
+  height: 60%;
   width: 80%;
   object-fit: cover; 
+  float: left;
 }
 .photoInfo {
   font-family: 'Comic';
@@ -62,7 +65,7 @@
   font-family: Comic;
   font-size: 1.5rem;
   line-height: 2rem;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .rightEducationSection {
@@ -70,33 +73,10 @@
     width: 50%;
 }
 
-table {
-  font-family: Comic;
-  font-size: 1.5rem;
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 8px;
-    text-align: center;
-  }
-  
-  td {
-    border: 1px solid #ccc;
-    padding: 18px;
-    text-align: center;
-  }
-  
-  tr:hover {
-    background-color: #f0f0f0;
-  }
-
   @media screen and (max-width: 1000px) {
     .educationMain {
       flex-direction: column;
+      margin-bottom: 0;
     }
     .leftEducationSection, .rightEducationSection {
       margin: auto;
@@ -118,7 +98,6 @@ table {
     
     .educationMain {
       flex-direction: column;
-      margin-top: 60px;
     }
     
     .leftEducationSection, .rightEducationSection {
@@ -134,9 +113,15 @@ table {
     }
 
     .photoFrame {
-      width: 80vw;
-      height: 70vh;
+      width: 100vw;
+      height: 60vh;
     }
     
+    table {
+      font-size: 1rem;
+      margin: auto;
+      width: 95%;
+      margin-bottom: 10%;
+    }
 
   }

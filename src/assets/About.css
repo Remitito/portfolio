@@ -82,9 +82,9 @@
 
 .aboutList li {
   font-family: Comic;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 2rem;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .rightAboutSection {
@@ -92,9 +92,10 @@
     width: 50%;
 }
 
+
 table {
   font-family: Comic;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
     width: 100%;
     border-collapse: collapse;
   }
@@ -102,7 +103,7 @@ table {
   th {
     background-color: #f0f0f0;
     border: 1px solid #ccc;
-    padding: 8px;
+    padding: 7px;
     text-align: center;
   }
   
