@@ -1,189 +1,148 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url('../assets/fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf');
-}
-@font-face {
-  font-family: 'Comic';
-  src: url('../assets/fonts/ComicNeue-Regular.ttf');
-}
-
 .scrollCont {
   height: 50px;
 }
-  .scroll {
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 60px;
-    height: 60px;
-    border: 2px solid #333;
-    border-radius: 50%;
-    position: absolute;
-    animation: down 1.5s infinite;
-    -webkit-animation: down 1.5s infinite;
+.scroll {
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  position: absolute;
+  animation: down 1.5s infinite;
+  -webkit-animation: down 1.5s infinite;
+}
+.scroll:hover {
+  background-color: #a9b7c6;
+}
+
+.scroll::before {
+  content: "";
+  top: 15px;
+  left: 18px;
+  width: 18px;
+  height: 18px;
+  border-left: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transform: rotate(-45deg);
+}
+
+@keyframes down {
+  0% {
+    transform: translate(0);
   }
-  .scroll:hover {
-    background-color: #a9b7c6;
+  20% {
+    transform: translateY(15px);
   }
-
-  .scroll::before {
-      content: '';
-      position: absolute;
-      top: 15px;
-      left: 18px;
-      width: 18px;
-      height: 18px;
-      border-left: 2px solid #333;
-      border-bottom: 2px solid #333;
-      transform: rotate(-45deg);
-    }
-  
-  @keyframes down {
-    0% {
-      transform: translate(0);
-    }
-    20% {
-      transform: translateY(15px);
-    }
-    40% {
-      transform: translate(0);
-    }
+  40% {
+    transform: translate(0);
   }
-  
-  @-webkit-keyframes down {
-    0% {
-      transform: translate(0);
-    }
-    20% {
-      transform: translateY(15px);
-    }
-    40% {
-      transform: translate(0);
-    }
+}
+
+@-webkit-keyframes down {
+  0% {
+    transform: translate(0);
   }
-
-.aboutHeading {
-    font-family: "Roboto";
-    font-size: 3rem;
-    text-align: center;
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
 }
-
-.aboutMain {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-
-.leftAboutSection {
-    margin-left: 3%;
-    width: 35%;
-}
-
-.aboutList li {
-  font-family: Comic;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  margin-top: 10px;
-}
-
-.rightAboutSection {
-    margin-right: 4%;
-    width: 50%;
-}
-
 
 table {
   font-family: Comic;
   font-size: 1.25rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 7px;
+  text-align: center;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 18px;
+  text-align: center;
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 1000px) {
+  .aboutMain {
+    flex-direction: column;
+  }
+  .leftAboutSection,
+  .rightAboutSection {
+    margin: auto;
     width: 100%;
+  }
+  .basicCol {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .scrollCont {
+    display: none;
+  }
+
+  .aboutHeading {
+    font-family: "Roboto";
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .aboutMain {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .leftAboutSection,
+  .rightAboutSection {
+    margin: auto;
+    width: 95%;
+  }
+
+  .aboutList li {
+    font-family: Comic;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 20px;
+  }
+
+  table {
+    font-family: Comic;
+    font-size: 0.8rem;
     border-collapse: collapse;
   }
-  
+
   th {
     background-color: #f0f0f0;
     border: 1px solid #ccc;
-    padding: 7px;
+    padding: 8px;
     text-align: center;
   }
-  
+
   td {
     border: 1px solid #ccc;
-    padding: 18px;
+    padding: 2px;
     text-align: center;
   }
-  
+
   tr:hover {
     background-color: #f0f0f0;
   }
 
-  @media screen and (max-width: 1000px) {
-    .aboutMain {
-      flex-direction: column;
-    }
-    .leftAboutSection, .rightAboutSection {
-      margin: auto;
-      width: 100%;
-    }
-    .basicCol {
-      display: none;
-    }
+  .basicCol {
+    display: none;
   }
-
-  @media only screen and (max-width: 767px) {
-    .scrollCont {
-      display: none;
-    }
-      
-    .aboutHeading {
-        font-family: "Roboto";
-        font-size: 3rem;
-        text-align: center;
-    }
-    
-    .aboutMain {
-      flex-direction: column;
-      margin-top: 60px;
-    }
-    
-    .leftAboutSection, .rightAboutSection {
-      margin: auto;
-      width: 95%;
-    }
-    
-    .aboutList li {
-      font-family: Comic;
-      font-size: 1.5rem;
-      line-height: 2rem;
-      margin-top: 20px;
-    }
-    
-
-    
-    table {
-      font-family: Comic;
-      font-size: 0.8rem;
-        border-collapse: collapse;
-      }
-      
-      th {
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
-        padding: 8px;
-        text-align: center;
-      }
-      
-      td {
-        border: 1px solid #ccc;
-        padding: 2px;
-        text-align: center;
-      }
-      
-      tr:hover {
-        background-color: #f0f0f0;
-      }
-
-      .basicCol {
-        display: none;
-      }
-  }
+}

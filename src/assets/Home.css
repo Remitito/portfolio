@@ -1,243 +1,185 @@
 @font-face {
-    font-family: 'Comic';
-    src: url('../assets/fonts/ComicNeue-Regular.ttf');
+  font-family: "Comic";
+  src: url("../assets/fonts/ComicNeue-Regular.ttf");
 }
-
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf');
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf");
 }
 
+.scroll {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  animation: down 1.5s infinite;
+  -webkit-animation: down 1.5s infinite;
+}
+.scroll:hover {
+  background-color: #a9b7c6;
+}
 
-.scrollCont {
-    height: 50px;
+.scroll::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  width: 13px;
+  height: 13px;
+  border-left: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transform: rotate(-45deg);
+}
+
+@keyframes down {
+  0% {
+    transform: translate(0);
   }
-    .scroll {
-      left: 0;
-      right: 0;
-      margin: auto;
-      width: 60px;
-      height: 60px;
-      border: 2px solid #333;
-      border-radius: 50%;
-      position: absolute;
-      animation: down 1.5s infinite;
-      -webkit-animation: down 1.5s infinite;
-    }
-    .scroll:hover {
-      background-color: #a9b7c6;
-    }
-  
-    .scroll::before {
-        content: '';
-        position: absolute;
-        top: 15px;
-        left: 18px;
-        width: 18px;
-        height: 18px;
-        border-left: 2px solid #333;
-        border-bottom: 2px solid #333;
-        transform: rotate(-45deg);
-      }
-    
-    @keyframes down {
-      0% {
-        transform: translate(0);
-      }
-      20% {
-        transform: translateY(15px);
-      }
-      40% {
-        transform: translate(0);
-      }
-    }
-    
-    @-webkit-keyframes down {
-      0% {
-        transform: translate(0);
-      }
-      20% {
-        transform: translateY(15px);
-      }
-      40% {
-        transform: translate(0);
-      }
-    }
-
-.hey {
-    font-family: Roboto;
-    font-size: 3rem;
-}
-.homeAbout {
-    font-family: Comic;
-    font-size: 2rem;
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
 }
 
-.homeLeft {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    width: auto;
-}
-
-.homeRight {
-    align-items: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: auto;
-}
-
-.homeMain {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: #f0f0f0;
-    height: 750px;
-    margin-bottom: 5vh;
-}
-
-
-.avatar {
-    height: 70%;
+@-webkit-keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
 }
 
 @keyframes growAndShrink {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
   }
-  
-  .bubble {
-      display: flex; 
-      justify-content: center;
-      align-items: center; 
-      width: 280px;
-      height: 100px;
-      border-radius: 20px;
-      }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 100px;
+  border-radius: 20px;
+}
 
-.bubble.bottom-right, .bubble.top-left, .bubble.top-right {
-    font-size: 1.6rem;
-    font-family: 'Courier New', monospace;
-    white-space: pre-wrap; 
-    background-color: #282c34; 
-    color: #a9b7c6;             
-    border-radius: 5px;
-    padding: 5px;              
+.bubble.bottom-right,
+.bubble.top-left,
+.bubble.top-right {
+  font-size: 1.6rem;
+  font-family: "Courier New", monospace;
+  white-space: pre-wrap;
+  background-color: #282c34;
+  color: #a9b7c6;
+  border-radius: 5px;
+  padding: 5px;
 }
 .bubble.bottom-left {
-    font-size: 1rem;
-    font-family: 'Courier New', monospace;
-    white-space: pre-wrap; 
-    background-color: #282c34; 
-    color: #a9b7c6;             
-    border-radius: 5px;
-    padding: 5px;  
-    overflow: scroll;
+  font-size: 1rem;
+  font-family: "Courier New", monospace;
+  white-space: pre-wrap;
+  background-color: #282c34;
+  color: #a9b7c6;
+  border-radius: 5px;
+  padding: 5px;
+  overflow: scroll;
 }
 
-.bubble.bottom-right p, .bubble.top-left p, .bubble.top-right p, .bubble.bottom-left p {
-    position: relative;
-    white-space: nowrap; 
-    margin: 0; 
-    letter-spacing: .15em; 
+.bubble.bottom-right p,
+.bubble.top-left p,
+.bubble.top-right p,
+.bubble.bottom-left p {
+  position: relative;
+  white-space: nowrap;
+  margin: 0;
+  letter-spacing: 0.15em;
 }
 
-.bubble.bottom-right p:after, .bubble.top-left p:after, .bubble.top-right p:after, .bubble.bottom-left p:after {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 100%; 
-    border-right: .15em solid orange; 
-    animation: blink-caret .75s step-end infinite; 
+.bubble.bottom-right p:after,
+.bubble.top-left p:after,
+.bubble.top-right p:after,
+.bubble.bottom-left p:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  border-right: 0.15em solid orange;
+  animation: blink-caret 0.75s step-end infinite;
 }
-
 
 @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: orange; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
-    .bubble.top-left:hover {
-        background-image: url('/spain.png');
-        color: transparent;
-        animation: none;
-        background-position: center;
-        background-size: cover;
-    }
-    .bubble.top-right:hover {
-        background-image: url('/china.png');
-        background-size: 100% 125%; 
-        background-position: 0% 0%; 
-        background-repeat: no-repeat;
-        color: transparent;
-    }
-    .bubble.bottom-right:hover {
-        background-image: url('/uk.png');
-        background-size: cover;
-        background-position: center; 
-        background-repeat: no-repeat;
-        color: transparent;
-    }
-    
+.bubble.top-left:hover {
+  background-image: url("/spain.png");
+  color: transparent;
+  animation: none;
+  background-position: center;
+  background-size: cover;
+}
+.bubble.top-right:hover {
+  background-image: url("/china.png");
+  background-size: 100% 125%;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+.bubble.bottom-right:hover {
+  background-image: url("/uk.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: transparent;
+}
 
 @media only screen and (max-width: 767px) {
-    .hey {
-        font-family: Roboto;
-        font-size: 2rem;
-    }
-    .homeAbout {
-        font-family: Comic;
-        font-size: 1.8rem;
-    }
-    
-    .homeLeft {
-        text-align: center;
-        width: 40%;
-    }
-    
-    .homeRight {
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-    }
-    
-    .homeMain {
-        display: flex;
-        flex-direction: row;
-        background-color: #f0f0f0;
-        height: 640px;
-        margin-top: 80px;
-        width: 100vw;
-    }
-    
-    .avatar {
-        height: 45%;
-    }
+  .hey {
+    font-family: Roboto;
+    font-size: 2rem;
+  }
+  .homeAbout {
+    font-family: Comic;
+    font-size: 1.8rem;
+  }
 
-    .bubble {
-        display: flex; 
-        justify-content: center;
-        align-items: center; 
-        width: 150px;
-        height: 60px;
-        border-radius: 20px;
-        }
-  
-  
-  .bubble.bottom-right, .bubble.top-left, .bubble.top-right, .bubble.bottom-left {
-      font-size: 1rem;
-             
+  .avatar {
+    height: 45%;
+  }
+
+  .bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+    border-radius: 20px;
+  }
+
+  .bubble.bottom-right,
+  .bubble.top-left,
+  .bubble.top-right,
+  .bubble.bottom-left {
+    font-size: 1rem;
   }
 }
