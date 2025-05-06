@@ -1,7 +1,7 @@
-This is a simple portfolio site with links to things I have built and some information about me.
+This is a simple portfolio site I built in 2023 while searching for my first job as a developer.
 
 **Live Version**
-The live version can be found at https://jackrosser.com
+The live version is no longer active
 
 **Tech Stack**
 This is a single-page static site, built using React, with react-scroll implemented for smoother navigation.
